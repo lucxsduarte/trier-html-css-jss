@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcular IMC</title>
+    <script src="../js/imc.js"></script>
+</head>
+<body>
+    <div>
+        <form action="#" method="get" onsubmit="return submitForm()">
+            <fieldset>
+                <legend>Calculador de IMC</legend>
+                <div>
+                    <label for="txtName">Nome</label>
+                    <input type="text" id="txtName" name="inputName" required>
+                </div>
+                <br>
+                <div>
+                    Sexo:
+                    <input type="radio" id="sexMasc" name="inputSex" value="masculino" checked>
+                    <label for="sexMasc">Masculino</label>
+                    <input type="radio" id="sexFem" name="inputSex" value="feminino">
+                    <label for="sexFem">Feminino</label>
+                </div>
+                <br>
+                <div>
+                    <label for="txtWeight">Peso</label>
+                    <input type="text" id="txtWeight" name="inputWeight" required>
+                    <br><br>
+                    <label for="txtHeight">Altura</label>
+                    <input type="text" id="txtHeight" name="inputHeight" required>
+                </div>
+                <br>
+                <div>
+                    <textarea name="txtResult" id="txtResult" cols="30" rows="10"></textarea>
+                </div>
+                <br>
+                <button>Enviar</button>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
