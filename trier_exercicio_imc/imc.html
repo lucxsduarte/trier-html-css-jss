@@ -5,26 +5,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calcular IMC</title>
     <script src="../js/imc.js"></script>
+    <link rel="stylesheet" href="../css/imc.css">
 </head>
 <body>
-    <div>
+    <div class="box">
         <form action="#" method="get" onsubmit="return submitForm()">
             <fieldset>
                 <legend>Calculador de IMC</legend>
-                <div>
+                <div class="inputTxt">
                     <label for="txtName">Nome</label>
                     <input type="text" id="txtName" name="inputName" required>
                 </div>
                 <br>
-                <div>
+                <div class="inputTxt">
                     Sexo:
-                    <input type="radio" id="sexMasc" name="inputSex" value="masculino" checked>
+                    <input type="radio" id="sexMasc" name="inputSex" value="Masculino" minhaTag="genero" checked>
                     <label for="sexMasc">Masculino</label>
-                    <input type="radio" id="sexFem" name="inputSex" value="feminino">
+                    <input type="radio" id="sexFem" name="inputSex" value="Feminino" minhaTag="genero">
                     <label for="sexFem">Feminino</label>
                 </div>
                 <br>
-                <div>
+                <div class="inputTxt"> 
                     <label for="txtWeight">Peso</label>
                     <input type="text" id="txtWeight" name="inputWeight" required>
                     <br><br>
@@ -32,11 +33,11 @@
                     <input type="text" id="txtHeight" name="inputHeight" required>
                 </div>
                 <br>
-                <div>
+                <div class="inputTxt">
                     <textarea name="txtResult" id="txtResult" cols="30" rows="10"></textarea>
                 </div>
                 <br>
-                <button>Enviar</button>
+                <button>CALCULAR</button>
             </fieldset>
         </form>
     </div>
